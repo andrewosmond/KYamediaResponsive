@@ -1,0 +1,226 @@
+:root {
+    --lighter-gray: rgb(180, 180, 180);
+    --light-gray: rgb(137, 137, 137);
+    --dark-gray: rgb(60, 60, 60);
+    --black: rgb(16, 16, 16);
+    --lighter-orange: rgb(255, 193, 7);
+    --light-orange: rgb(246, 148, 30);
+    --orange: rgb(246, 148, 0);
+}
+
+@font-face {
+    font-family: Futura Bk BT Book Italic;
+    src: url("asset/font/Futura Bk BT Book Italic.ttf");
+}
+
+@font-face {
+    font-family: Futura Bk BT Book;
+    src: url("asset/font/Futura Bk BT Book.ttf");
+}
+
+@font-face {
+    font-family: Futura Md BT Bold Italic;
+    src: url("asset/font/Futura Md BT Book Italic.ttf");
+}
+
+@font-face {
+    font-family: Futura Md BT Bold;
+    src: url("asset/font/Futura Md BT Bold.ttf");
+}
+
+@font-face {
+    font-family: Futura Md BT Medium Italic;
+    src: url("asset/font/Futura Md BT Medium Italic.ttf");
+}
+
+@font-face {
+    font-family: Futura Md BT Medium;
+    src: url("asset/font/Futura Md BT Medium.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    padding-top: 16px;
+    margin: 0 5vw;
+    align-items: center;
+}
+
+.navbar > img {
+    width: 230px;
+}
+
+.navbar a {
+    font-family: Futura Md BT Bold;
+    color: var(--light-gray);
+    text-decoration: none;
+    padding: 15px;
+}
+
+.menu {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0;
+    list-style: none;
+}
+
+.sidenav {
+    font-family: Futura Md BT Bold;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.burger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.container {
+    flex-grow: 1;
+}
+
+footer {
+    display: flex;
+    padding: 10px 3vw;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(251, 251, 251);
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.line-border {
+    display: inline-block;
+    width: 3px;
+    height: 32px;
+    background-color: rgb(225, 225, 225);
+    margin: 0 10px;
+}
+
+.icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.fb {
+    background-image: url("asset/icon/facebook-png-download-2.png");
+}
+
+.ig {
+    background-image: url("asset/icon/instagram-logo-png-transparent-0.png");
+}
+
+.twitter {
+    background-image: url("asset/icon/twitter_PNG9.png");
+}
+
+footer, .policy a {
+    font-family: Futura Md BT Medium;
+    font-size: 16px;
+    color: var(--light-gray);
+    text-decoration: none;
+}
+
+.policy {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.policy a {
+    padding: 10px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;} 
+}
+
+@media only screen and (max-width: 800px) {
+    .menu {display: none;}
+    footer {flex-direction: column;}
+}
+
+@media only screen and (min-width: 800px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .burger-menu {display: none;}
+}
