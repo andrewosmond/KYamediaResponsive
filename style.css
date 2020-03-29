@@ -45,9 +45,9 @@
 body {
     margin: 0;
     padding: 0;
-    min-width: 480px;
+ /*   min-width: 480px;
     width: auto !important;
-    width: 480px;
+    width: 480px;*/
 }
 
 .navbar a:hover, footer a:hover {
@@ -247,6 +247,11 @@ footer, .policy a {
     width: 100%;
 }
 
+@media only screen and (max-width: 500px){
+    .policy {flex-direction: column;}
+}
+
+
 @media only screen and (min-width: 600px) {
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
@@ -266,6 +271,9 @@ footer, .policy a {
 @media only screen and (max-width: 800px) {
     .menu {display: none;}
     footer {flex-direction: column;}
+    footer > span {padding: 10px;}
+    .policy {text-align: center;}
+    .policy li {padding: 10px;}
 }
 
 @media only screen and (min-width: 800px) {
