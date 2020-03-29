@@ -53,9 +53,10 @@ body {
 
 .navbar {
     display: flex;
-    padding-top: 16px;
+    padding: 10px 0;
     margin: 0 5vw;
     align-items: center;
+    background-color: white;
 }
 
 .navbar > img {
@@ -182,8 +183,64 @@ footer, .policy a {
     padding: 10px;
 }
 
+.promotion {
+    margin: 0 5vw;
+    font-family: Futura Md BT Medium;
+    color: var(--light-orange);
+}
+
+.promotion p, .desc {
+    color: var(--light-gray);
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.promotion img {
+    width: 380px;
+}
+
+.time-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.time-counter {
+    border-left: 0.25rem solid var(--light-orange);
+    width: 25%;
+    /* border: 3px solid black; */
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.time-counter span {
+    display: block;
+}
+
+.row {
+    margin: 0 5vw;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
 /* For mobile phones: */
 [class*="col-"] {
+    float: left;
     width: 100%;
 }
 

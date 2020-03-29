@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="homepage.css">
 	<title>KYamedia</title>
 </head>
 <body>
@@ -19,15 +20,49 @@
 
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="">Home</a>
-		<a href="">Books</a>
+		<a href="homepage.html">Home</a>
+		<a href="product-1.html">Books</a>
 		<a href="">Cart</a>
-		<a href="">About Us</a>
-		<a href="">Sign Up</a>
+		<a href="about-us.html">About Us</a>
+		<a href="register.html">Sign Up</a>
 	</div>
 	
 	<main>
-		
+		<div class="row promotion">
+			<div class="col-7 col-s-12">
+				<h1>Start a new series - Up to 50% off</h1>
+	            <p class="promo-desc">
+	                We has the weekly promotion, keep up with us and you'll 
+	                get the best deal to get your stuff. Our design reflects
+	                the purity of contemporary forms for enduring appeal
+	            </p>
+	            <div class="time-container">
+                    <div class="time-counter">
+                        <span class="count">292</span>
+                        <span class="desc">Days</span>
+                    </div>
+                    <div class="time-counter">
+                        <span class="count">11</span>
+                        <span class="desc ">Hours</span>
+                    </div>
+                    <div class="time-counter">
+                        <span class="count">19</span>
+                        <span class="desc">Min</span>
+                    </div>
+                    <div class="time-counter">
+                        <span class="count">48</span>
+                        <span class="desc">Sec</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="reg-button" id="shop-now">Shop Now</button>
+                </div>
+			</div>
+
+			<div class="col-5 col-s-12 text-center">
+				<img src="asset/content/Capture.PNG">
+			</div>
+		</div>
 	</main>
 
 	<footer>
@@ -40,12 +75,16 @@
 			<a target="blank" class="icon twitter" href="https://www.twitter.com"></a>	
 		</span>
 		<ul class="policy">
-			<li><a href="">Copyright Policy</a></li>
-			<li><a href="">Term of Service</a></li>
-			<li><a href="">Privacy Policy</a></li>
+			<li><a href="#">Copyright Policy</a></li>
+			<li><a href="#">Term of Service</a></li>
+			<li><a href="#">Privacy Policy</a></li>
 		</ul>
 	</footer>
 
+	<a class="scrollToTop" href="#"></a>
+
+	<script src="jquery-3.4.1.min.js"></script>
 	<script src="script.js"></script>
+	<script src="homepage.js"></script>
 </body>
 </html>
