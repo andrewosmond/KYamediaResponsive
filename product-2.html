@@ -1,55 +1,337 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="product-1.css">
-	<title>KYamedia</title>
-</head>
-<body>
-	<header class="navbar">
-		<img src="asset/logo.png">
-		<ul class="menu">
-			<li><a href="homepage.html">Home</a></li>
-			<li><a href="product-1.html">Books</a></li>
-			<li><a href="">Cart</a></li>
-			<li><a href="about-us.html">About Us</a></li>
-			<li><a href="register.html">Sign Up</a></li>
-		</ul>
-		<span class="burger-menu" onclick="openNav()">&#9776;</span>
-	</header>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="product-1.css" />
+        <title>KYamedia</title>
+    </head>
+    <body>
+        <header class="navbar">
+            <img src="asset/logo.png" />
+            <ul class="menu">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="product-1.html">Books</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+            </ul>
+            <span class="burger-menu" onclick="openNav()">&#9776;</span>
+        </header>
 
-	<div id="mySidenav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="homepage.html">Home</a>
-		<a href="product-1.html">Books</a>
-		<a href="">Cart</a>
-		<a href="about-us.html">About Us</a>
-		<a href="register.html">Sign Up</a>
-	</div>
-	
-	<main>
-		
-	</main>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+            >
+            <a href="homepage.html">Home</a>
+            <a href="product-1.html">Books</a>
+            <a href="">Cart</a>
+            <a href="about-us.html">About Us</a>
+            <a href="register.html">Sign Up</a>
+        </div>
 
-	<footer>
-		<span>© 2020 Kyamedia Online Bookshop.Inc</span>
-		<span class="social-media">
-			<a target="blank" class="icon fb" href="https://www.facebook.com"></a>
-			<span class="line-border"></span>
-			<a target="blank" class="icon ig" href="https://www.instagram.com"></a>
-			<span class="line-border"></span>
-			<a target="blank" class="icon twitter" href="https://www.twitter.com"></a>	
-		</span>
-		<ul class="policy">
-			<li><a href="#">Copyright Policy</a></li>
-			<li><a href="#">Term of Service</a></li>
-			<li><a href="#">Privacy Policy</a></li>
-		</ul>
-	</footer>
+        <div id="e-book-navbar">
+            <div id="e-book">
+                <div class="col-4 col-s-12 e-book-icon">
+                    <div id="title">
+                        Book
+                        <div id="dropdown">
+                            <a href="product-2.html">E - Book</a>
+                        </div>
+                    </div>
+                    <img src="asset/icon/sort.png" alt="" />
+                </div>
+                <a id="all-genres" href="">All-Genres</a>
+                <a id="science" href="">Science</a>
+                <a id="business" href="">Business</a>
+                <a id="fiction" href="">Fiction</a>
+                <a id="fantasy" href="">Fantasy</a>
+            </div>
+        </div>
 
-	<script src="jquery-3.4.1.min.js"></script>
-	<script src="script.js"></script>
-</body>
+        <div id="content">
+            <div id="book-section">
+                <div id="book-container">
+                    <div class="book">
+                        <div class="book-pict book-img3"></div>
+                        <div class="overlay">
+                            <span class="overlay-top">
+                                <img
+                                    class="star-icon"
+                                    src="asset/icon/star (1).png"
+                                />
+                                <div class="star">3.5</div>
+                                <div class="type">Book</div>
+                            </span>
+                            <span class="overlay-mid">
+                                <img
+                                    class="search-icon"
+                                    src="asset/icon/search.png"
+                                />
+                                <div class="view-more">View More</div>
+                            </span>
+                            <span class="overlay-bot">
+                                <div class="price">$19.00</div>
+                                <img class="heart" src="asset/icon/heart.png" />
+                            </span>
+                        </div>
+                        <div class="book-title text-center">Koolau</div>
+                    </div>
+                    <div class="book">
+                        <div class="book-pict book-img1"></div>
+                        <div class="overlay">
+                            <span class="overlay-top">
+                                <img
+                                    class="star-icon"
+                                    src="asset/icon/star (1).png"
+                                />
+                                <div class="star">3.5</div>
+                                <div class="type">Book</div>
+                            </span>
+                            <span class="overlay-mid">
+                                <img
+                                    class="search-icon"
+                                    src="asset/icon/search.png"
+                                />
+                                <div class="view-more">View More</div>
+                            </span>
+                            <span class="overlay-bot">
+                                <div class="price">$19.00</div>
+                                <img class="heart" src="asset/icon/heart.png" />
+                            </span>
+                        </div>
+                        <div class="book-title text-center">
+                            The Great Gatsby
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="book-pict book-img2"></div>
+                        <div class="overlay">
+                            <span class="overlay-top">
+                                <img
+                                    class="star-icon"
+                                    src="asset/icon/star (1).png"
+                                />
+                                <div class="star">3.5</div>
+                                <div class="type">Book</div>
+                            </span>
+                            <span class="overlay-mid">
+                                <img
+                                    class="search-icon"
+                                    src="asset/icon/search.png"
+                                />
+                                <div class="view-more">View More</div>
+                            </span>
+                            <span class="overlay-bot">
+                                <div class="price">$19.00</div>
+                                <img class="heart" src="asset/icon/heart.png" />
+                            </span>
+                        </div>
+                        <div class="book-title text-center">
+                            Late Night Thoughts
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="book-pict book-img3"></div>
+                        <div class="overlay">
+                            <span class="overlay-top">
+                                <img
+                                    class="star-icon"
+                                    src="asset/icon/star (1).png"
+                                />
+                                <div class="star">3.5</div>
+                                <div class="type">Book</div>
+                            </span>
+                            <span class="overlay-mid">
+                                <img
+                                    class="search-icon"
+                                    src="asset/icon/search.png"
+                                />
+                                <div class="view-more">View More</div>
+                            </span>
+                            <span class="overlay-bot">
+                                <div class="price">$19.00</div>
+                                <img class="heart" src="asset/icon/heart.png" />
+                            </span>
+                        </div>
+                        <div class="book-title text-center">Koolau</div>
+                    </div>
+                    <div class="book">
+                        <div class="book-pict book-img3"></div>
+                        <div class="overlay">
+                            <span class="overlay-top">
+                                <img
+                                    class="star-icon"
+                                    src="asset/icon/star (1).png"
+                                />
+                                <div class="star">3.5</div>
+                                <div class="type">Book</div>
+                            </span>
+                            <span class="overlay-mid">
+                                <img
+                                    class="search-icon"
+                                    src="asset/icon/search.png"
+                                />
+                                <div class="view-more">View More</div>
+                            </span>
+                            <span class="overlay-bot">
+                                <div class="price">$19.00</div>
+                                <img class="heart" src="asset/icon/heart.png" />
+                            </span>
+                        </div>
+                        <div class="book-title text-center">Koolau</div>
+                    </div>
+                    <div class="book">
+                        <div class="book-pict book-img1"></div>
+                        <div class="overlay">
+                            <span class="overlay-top">
+                                <img
+                                    class="star-icon"
+                                    src="asset/icon/star (1).png"
+                                />
+                                <div class="star">3.5</div>
+                                <div class="type">Book</div>
+                            </span>
+                            <span class="overlay-mid">
+                                <img
+                                    class="search-icon"
+                                    src="asset/icon/search.png"
+                                />
+                                <div class="view-more">View More</div>
+                            </span>
+                            <span class="overlay-bot">
+                                <div class="price">$19.00</div>
+                                <img class="heart" src="asset/icon/heart.png" />
+                            </span>
+                        </div>
+                        <div class="book-title text-center">
+                            The Great Gatsby
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="book-pict book-img2"></div>
+                        <div class="overlay">
+                            <span class="overlay-top">
+                                <img
+                                    class="star-icon"
+                                    src="asset/icon/star (1).png"
+                                />
+                                <div class="star">3.5</div>
+                                <div class="type">Book</div>
+                            </span>
+                            <span class="overlay-mid">
+                                <img
+                                    class="search-icon"
+                                    src="asset/icon/search.png"
+                                />
+                                <div class="view-more">View More</div>
+                            </span>
+                            <span class="overlay-bot">
+                                <div class="price">$19.00</div>
+                                <img class="heart" src="asset/icon/heart.png" />
+                            </span>
+                        </div>
+                        <div class="book-title text-center">
+                            Late Night Thoughts
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="book-pict book-img3"></div>
+                        <div class="overlay">
+                            <span class="overlay-top">
+                                <img
+                                    class="star-icon"
+                                    src="asset/icon/star (1).png"
+                                />
+                                <div class="star">3.5</div>
+                                <div class="type">Book</div>
+                            </span>
+                            <span class="overlay-mid">
+                                <img
+                                    class="search-icon"
+                                    src="asset/icon/search.png"
+                                />
+                                <div class="view-more">View More</div>
+                            </span>
+                            <span class="overlay-bot">
+                                <div class="price">$19.00</div>
+                                <img class="heart" src="asset/icon/heart.png" />
+                            </span>
+                        </div>
+                        <div class="book-title text-center">Koolau</div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button id="view-more-button">View More</button>
+                </div>
+            </div>
+
+            <div id="promotion">
+                <div id="promo-detail" class="col-8 col-s-12">
+                    <h1 id="promo-title">Start a new series - Up to 50% off</h1>
+                    <p id="promo-desc">
+                        We has the weekly promotion, keep up with us and you'll
+                        get the best deal to get your stuff. Our design reflects
+                        the purity of contemporary forms for enduring appeal
+                    </p>
+                    <div id="time-container">
+                        <div class="time-counter">
+                            <span class="count">292</span>
+                            <span class="desc">Days</span>
+                        </div>
+                        <div class="time-counter">
+                            <span class="count">11</span>
+                            <span class="desc ">Hours</span>
+                        </div>
+                        <div class="time-counter">
+                            <span class="count">19</span>
+                            <span class="desc">Min</span>
+                        </div>
+                        <div class="time-counter">
+                            <span class="count">48</span>
+                            <span class="desc">Sec</span>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button id="shop-now">Shop Now</button>
+                    </div>
+                </div>
+                <div id="promo-book" class="col-4 col-s-12">
+                    <img src="asset/content/Capture.PNG" />
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <span>© 2020 Kyamedia Online Bookshop.Inc</span>
+            <span class="social-media">
+                <a
+                    target="blank"
+                    class="icon fb"
+                    href="https://www.facebook.com"
+                ></a>
+                <span class="line-border"></span>
+                <a
+                    target="blank"
+                    class="icon ig"
+                    href="https://www.instagram.com"
+                ></a>
+                <span class="line-border"></span>
+                <a
+                    target="blank"
+                    class="icon twitter"
+                    href="https://www.twitter.com"
+                ></a>
+            </span>
+            <ul class="policy">
+                <li><a href="#">Copyright Policy</a></li>
+                <li><a href="#">Term of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </footer>
+
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
 </html>

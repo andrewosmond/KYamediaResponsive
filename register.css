@@ -1,1 +1,224 @@
+#sign-up {
+    color: var(--dark-gray);
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    margin: 0 5vw;
+    font-family: Futura Md BT Medium;
+    color: var(--light-gray);
+}
+
+#join-us {
+    font-family: Futura Md BT Bold;
+    color: var(--orange);
+    font-size: 48px;
+    margin: 0 0;
+}
+
+#info {
+    margin: 0 0 8px 0;
+    color: rgb(80, 80, 80);
+    max-width: 75%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.input > label {
+    margin: 10px 0;
+}
+
+.input > input {
+    border: 2px solid transparent;
+    border-color: transparent transparent var(--light-orange) transparent;
+    font-family: Futura Md BT Medium;
+    color: var(--dark-gray);
+}
+
+/*
+.input > input::-webkit-input-placeholder {
+    font-family: Futura Md BT Medium;
+}
+
+input[type="date"] {
+    font-family: Futura Md BT Medium;
+}
+*/
+
+.custom-select {
+    position: relative;
+    font-family: Futura Md BT Medium;
+}
+
+/* https://www.w3schools.com/howto/howto_custom_select.asp */
+
+.custom-select select {
+    display: none;
+    border: none;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #000000 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #000000 transparent;
+    top: 5px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+    padding: 1px 0;
+    cursor: pointer;
+    font-size: 13.33px;
+    font-weight: 400;
+}
+
+.select-selected {
+    color: var(--light-gray);
+    border: 2px solid transparent;
+    border-color: transparent transparent var(--light-orange) transparent;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: var(--light-orange);
+    color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+/* Customize the label (the container) */
+.agreement {
+    margin: 10px 0;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.agreement input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.agreement:hover input ~ .checkmark {
+    background-color: #bbb;
+}
+
+/* When the checkbox is checked, add a gray background */
+.agreement input:checked ~ .checkmark {
+    background-color: var(--dark-gray);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.agreement input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.agreement .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--light-orange);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#submit {
+    width: 15vw;
+    min-height: 32px;
+    font-family: Futura Md BT Medium;
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+    border-color: var(--light-orange);
+    box-shadow: 3px 5px 1px 1px rgba(246, 149, 30, 0.5);
+    background-color: var(--light-orange);
+}
+
 /*To do*/
+@media only screen and (max-width: 800px) {
+    #content > img {
+        display: none;
+    }
+    #info {
+        max-width: 100%;
+    }
+    #submit-container {
+        display: flex;
+        justify-content: center;
+    }
+}
