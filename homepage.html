@@ -13,7 +13,9 @@
 		<ul class="menu">
 			<li><a href="homepage.html">Home</a></li>
 			<li><a href="product-1.html">Books</a></li>
-			<li><a href="">Cart</a></li>
+			<span class="cart-img">‏‏‎‎</span>
+			<li class="cart"><a href="">Cart</a></li>
+			<span class="cart-count">1</span>
 			<li><a href="about-us.html">About Us</a></li>
 			<li><a href="register.html">Sign Up</a></li>
 		</ul>
@@ -24,21 +26,399 @@
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<a href="homepage.html">Home</a>
 		<a href="product-1.html">Books</a>
-		<a href="">Cart</a>
+		<a class="cart-side" href=""><span class="cart-img">‏‏‎‎</span> Cart <span class="cart-count">1</span></a>
 		<a href="about-us.html">About Us</a>
 		<a href="register.html">Sign Up</a>
 	</div>
-	
-	<main>
-		<div class="row promotion">
+
+	<div id="banner-slider-container">
+		<div class="m-tb-5">
 			<div class="col-7 col-s-12">
-				<h1>Start a new series - Up to 50% off</h1>
-	            <p class="promo-desc">
-	                We has the weekly promotion, keep up with us and you'll 
-	                get the best deal to get your stuff. Our design reflects
-	                the purity of contemporary forms for enduring appeal
-	            </p>
-	            <div class="time-container">
+	            <div class="mySlides fade text-center">
+	                <img src="asset/content/img-slider1.png">
+	            </div>
+	            <div class="mySlides fade text-center">
+	                <img src="asset/content/img-slider2.png">
+	            </div>
+	            <div class="mySlides fade text-center">
+	                <img src="asset/content/img-slider3.png">
+	            </div>
+	            <div class="mySlides fade text-center">
+	                <img src="asset/content/img-slider4.png">
+	            </div>
+			</div>
+
+			<div class="col-5 col-s-12 right-slide">
+				<div class="tab-container">
+	                <div class="tabcontent fade">
+	                    <h1>London's Fair</h1>
+	                    <p>
+	                    	London's National Book Exhibition. Special feature
+	                    	for exhibition, there will be author from
+	                    	all over the world who are present their best book
+	                    	at the festibal, and discounts up to 90%
+	                    	in the form of sweepstakes
+	                    </p>
+	                    <div>
+	                    	<button class="reg-button">Join Event</button>
+	                    </div>
+	                </div>
+	                <div class="tabcontent fade">
+	                    <h1>London's Fair</h1>
+	                    <p>
+	                    	London's National Book Exhibition. Special feature
+	                    	for exhibition, there will be author from
+	                    	all over the world who are present their best book
+	                    	at the festibal, and discounts up to 90%
+	                    	in the form of sweepstakes
+	                    </p>
+	                    <div>
+	                    	<button class="reg-button">Join Event</button>
+	                    </div>
+	                </div>
+	                <div class="tabcontent fade">
+	                    <h1>London's Fair</h1>
+	                    <p>
+	                    	London's National Book Exhibition. Special feature
+	                    	for exhibition, there will be author from
+	                    	all over the world who are present their best book
+	                    	at the festibal, and discounts up to 90%
+	                    	in the form of sweepstakes
+	                    </p>
+	                    <div>
+	                    	<button class="reg-button">Join Event</button>
+	                    </div>
+	                </div>
+	                <div class="tabcontent fade">
+	                    <h1>London's Fair</h1>
+	                    <p>
+	                    	London's National Book Exhibition. Special feature
+	                    	for exhibition, there will be author from
+	                    	all over the world who are present their best book
+	                    	at the festibal, and discounts up to 90%
+	                    	in the form of sweepstakes
+	                    </p>
+	                    <div>
+	                    	<button class="reg-button">Join Event</button>
+	                    </div>
+	                </div>
+	            </div>
+
+				<div class="dot-container">
+	                <span class="dot" onclick="currentSlide(1)"></span>
+	                <span class="dot" onclick="currentSlide(2)"></span>
+	                <span class="dot" onclick="currentSlide(3)"></span>
+	                <span class="dot" onclick="currentSlide(4)"></span>
+	        	</div>
+			</div>
+		</div>
+	</div>
+
+    <div id="e-book-navbar">
+        <div id="e-book">
+            <div class="col-4 col-s-12 e-book-icon">
+                <div id="title">
+                    New Releases
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="book-slider">
+        <div class="prev">
+            <img src="asset/icon/back.png" onclick="prevBooks()">
+        </div>
+
+        <div class="sliders mini-book">
+            <img src="asset/content/aaa (1).jpg">
+            <div class="book-title">The Great Gatsby</div>
+            <div class="author">by F. Scoot Fitzgerald</div>
+            <div class="stars">
+                <img src="asset/icon/star.png">
+                <img src="asset/icon/star.png">
+                <img src="asset/icon/star.png">
+                <img src="asset/icon/star.png">
+                <img src="asset/icon/star (1).png">
+            </div>
+            <button><span class="price-text">$30.00</span><span class="cart-text">Add to Cart</span></button>
+        </div>
+
+        <div class="big-book-container">
+            <div class="sliders big-book-border">
+                <img src="asset/content/aaa (3).jpg">
+                <div class="book-title-big">Koolau</div>
+                <div class="author-big">by J. London</div>
+                <div class="stars">
+                    <img src="asset/icon/star.png">
+                    <img src="asset/icon/star.png">
+                    <img src="asset/icon/star.png">
+                    <img src="asset/icon/star.png">
+                    <img src="asset/icon/star.png">
+                </div>
+                <button><span class="price-text">$45.00</span><span class="cart-text">Add to Cart</span></button>
+            </div>
+        </div>
+        
+        <div class="sliders mini-book">
+            <img src="asset/content/aaa (2).png">
+            <div class="book-title">Late Night Thoughts</div>
+            <div class="author">by Veeven Depny</div>
+            <div class="stars">
+                <img src="asset/icon/star.png">
+                <img src="asset/icon/star.png">
+                <img src="asset/icon/star.png">
+                <img src="asset/icon/star (1).png">
+                <img src="asset/icon/star (1).png">
+            </div>
+            <button><span class="price-text">$19.00</span><span class="cart-text">Add to Cart</span></button>
+        </div>
+
+        <div class="next">
+            <img src="asset/icon/back.png" onclick="nextBooks()">
+        </div>
+    </div>
+
+	<div id="e-book-navbar">
+        <div id="e-book">
+            <div class="col-4 col-s-12 e-book-icon">
+                <div id="title">
+                    Best Seller
+                </div>
+            </div>
+            <a id="all-genres" href="">All-Genres</a>
+            <a id="science" href="">Science</a>
+            <a id="business" href="">Business</a>
+            <a id="fiction" href="">Fiction</a>
+            <a id="fantasy" href="">Fantasy</a>
+        </div>
+    </div>
+	
+	<div id="content">
+        <div id="book-section">
+            <div id="book-container">
+                <div class="book">
+                    <div class="book-pict book-img3"></div>
+                    <div class="overlay">
+                        <span class="overlay-top">
+                            <img
+                                class="star-icon"
+                                src="asset/icon/star (1).png"
+                            />
+                            <div class="star">3.5</div>
+                            <div class="type">E-Book</div>
+                        </span>
+                        <span class="overlay-mid">
+                            <img
+                                class="search-icon"
+                                src="asset/icon/search.png"
+                            />
+                            <div class="view-more">View More</div>
+                        </span>
+                        <span class="overlay-bot">
+                            <div class="price">$19.00</div>
+                            <img class="heart" src="asset/icon/heart.png" />
+                        </span>
+                    </div>
+                    <div class="book-title text-center">Koolau</div>
+                </div>
+                <div class="book">
+                    <div class="book-pict book-img1"></div>
+                    <div class="overlay">
+                        <span class="overlay-top">
+                            <img
+                                class="star-icon"
+                                src="asset/icon/star (1).png"
+                            />
+                            <div class="star">3.5</div>
+                            <div class="type">E-Book</div>
+                        </span>
+                        <span class="overlay-mid">
+                            <img
+                                class="search-icon"
+                                src="asset/icon/search.png"
+                            />
+                            <div class="view-more">View More</div>
+                        </span>
+                        <span class="overlay-bot">
+                            <div class="price">$19.00</div>
+                            <img class="heart" src="asset/icon/heart.png" />
+                        </span>
+                    </div>
+                    <div class="book-title text-center">
+                        The Great Gatsby
+                    </div>
+                </div>
+                <div class="book">
+                    <div class="book-pict book-img2"></div>
+                    <div class="overlay">
+                        <span class="overlay-top">
+                            <img
+                                class="star-icon"
+                                src="asset/icon/star (1).png"
+                            />
+                            <div class="star">3.5</div>
+                            <div class="type">E-Book</div>
+                        </span>
+                        <span class="overlay-mid">
+                            <img
+                                class="search-icon"
+                                src="asset/icon/search.png"
+                            />
+                            <div class="view-more">View More</div>
+                        </span>
+                        <span class="overlay-bot">
+                            <div class="price">$19.00</div>
+                            <img class="heart" src="asset/icon/heart.png" />
+                        </span>
+                    </div>
+                    <div class="book-title text-center">
+                        Late Night Thoughts
+                    </div>
+                </div>
+                <div class="book">
+                    <div class="book-pict book-img3"></div>
+                    <div class="overlay">
+                        <span class="overlay-top">
+                            <img
+                                class="star-icon"
+                                src="asset/icon/star (1).png"
+                            />
+                            <div class="star">3.5</div>
+                            <div class="type">E-Book</div>
+                        </span>
+                        <span class="overlay-mid">
+                            <img
+                                class="search-icon"
+                                src="asset/icon/search.png"
+                            />
+                            <div class="view-more">View More</div>
+                        </span>
+                        <span class="overlay-bot">
+                            <div class="price">$19.00</div>
+                            <img class="heart" src="asset/icon/heart.png" />
+                        </span>
+                    </div>
+                    <div class="book-title text-center">Koolau</div>
+                </div>
+                <div class="book">
+                    <div class="book-pict book-img3"></div>
+                    <div class="overlay">
+                        <span class="overlay-top">
+                            <img
+                                class="star-icon"
+                                src="asset/icon/star (1).png"
+                            />
+                            <div class="star">3.5</div>
+                            <div class="type">E-Book</div>
+                        </span>
+                        <span class="overlay-mid">
+                            <img
+                                class="search-icon"
+                                src="asset/icon/search.png"
+                            />
+                            <div class="view-more">View More</div>
+                        </span>
+                        <span class="overlay-bot">
+                            <div class="price">$19.00</div>
+                            <img class="heart" src="asset/icon/heart.png" />
+                        </span>
+                    </div>
+                    <div class="book-title text-center">Koolau</div>
+                </div>
+                <div class="book">
+                    <div class="book-pict book-img1"></div>
+                    <div class="overlay">
+                        <span class="overlay-top">
+                            <img
+                                class="star-icon"
+                                src="asset/icon/star (1).png"
+                            />
+                            <div class="star">3.5</div>
+                            <div class="type">E-Book</div>
+                        </span>
+                        <span class="overlay-mid">
+                            <img
+                                class="search-icon"
+                                src="asset/icon/search.png"
+                            />
+                            <div class="view-more">View More</div>
+                        </span>
+                        <span class="overlay-bot">
+                            <div class="price">$19.00</div>
+                            <img class="heart" src="asset/icon/heart.png" />
+                        </span>
+                    </div>
+                    <div class="book-title text-center">
+                        The Great Gatsby
+                    </div>
+                </div>
+                <div class="book">
+                    <div class="book-pict book-img2"></div>
+                    <div class="overlay">
+                        <span class="overlay-top">
+                            <img
+                                class="star-icon"
+                                src="asset/icon/star (1).png"
+                            />
+                            <div class="star">3.5</div>
+                            <div class="type">E-Book</div>
+                        </span>
+                        <span class="overlay-mid">
+                            <img
+                                class="search-icon"
+                                src="asset/icon/search.png"
+                            />
+                            <div class="view-more">View More</div>
+                        </span>
+                        <span class="overlay-bot">
+                            <div class="price">$19.00</div>
+                            <img class="heart" src="asset/icon/heart.png" />
+                        </span>
+                    </div>
+                    <div class="book-title text-center">
+                        Late Night Thoughts
+                    </div>
+                </div>
+                <div class="book">
+                    <div class="book-pict book-img3"></div>
+                    <div class="overlay">
+                        <span class="overlay-top">
+                            <img
+                                class="star-icon"
+                                src="asset/icon/star (1).png"
+                            />
+                            <div class="star">3.5</div>
+                            <div class="type">E-Book</div>
+                        </span>
+                        <span class="overlay-mid">
+                            <img
+                                class="search-icon"
+                                src="asset/icon/search.png"
+                            />
+                            <div class="view-more">View More</div>
+                        </span>
+                        <span class="overlay-bot">
+                            <div class="price">$19.00</div>
+                            <img class="heart" src="asset/icon/heart.png" />
+                        </span>
+                    </div>
+                    <div class="book-title text-center">Koolau</div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="reg-button">View More</button>
+            </div>
+        </div>
+
+        <div id="promotion">
+            <div id="promo-detail" class="col-8 col-s-12">
+                <h1 id="promo-title">Start a new series - Up to 50% off</h1>
+                <p id="promo-desc">
+                    We has the weekly promotion, keep up with us and you'll
+                    get the best deal to get your stuff. Our design reflects
+                    the purity of contemporary forms for enduring appeal
+                </p>
+                <div id="time-container">
                     <div class="time-counter">
                         <span class="count">292</span>
                         <span class="desc">Days</span>
@@ -56,16 +436,15 @@
                         <span class="desc">Sec</span>
                     </div>
                 </div>
-                <div class="text-center">
-                    <button class="reg-button" id="shop-now">Shop Now</button>
+                <div class="button-container">
+                    <button class="reg-button">Shop Now</button>
                 </div>
-			</div>
-
-			<div class="col-5 col-s-12 text-center">
-				<img src="asset/content/Capture.PNG">
-			</div>
-		</div>
-	</main>
+            </div>
+            <div id="promo-book" class="col-4 col-s-12">
+                <img src="asset/content/Capture.PNG" />
+            </div>
+        </div>
+    </div>
 
 	<footer>
 		<span>© 2020 Kyamedia Online Bookshop.Inc</span>

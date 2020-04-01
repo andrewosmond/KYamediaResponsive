@@ -1,3 +1,17 @@
+:root {
+    --lighter-gray: rgb(180, 180, 180);
+    --light-gray: rgb(137, 137, 137);
+    --dark-gray: rgb(60, 60, 60);
+    --black: rgb(16, 16, 16);
+    --lighter-orange: rgb(255, 193, 7);
+    --light-orange: rgb(246, 148, 30);
+    --orange: rgb(246, 148, 0);
+}
+
+main {
+    height: 1200px;
+}
+
 .scrollToTop {
     display: inline-block;
     background-color: rgb(246, 148, 30);
@@ -13,6 +27,13 @@
     background-repeat: no-repeat;
 }
 
+#banner-slider-container {
+    margin: 0 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 .reg-button {
     border-radius: 0.5rem;
     border-style: none;
@@ -25,6 +46,573 @@
     cursor: pointer;
 }
 
-main {
-    height: 1200px;
+.right-slide {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.tab-container {
+    font-family: Futura Md BT Medium;
+    color: var(--light-orange);
+}
+
+.tab-container h1 {
+    margin-top: 0;
+}
+
+.tab-container p {
+    color: var(--light-gray);
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.mySlides, .tabcontent {
+    display: none;
+}
+
+.mySlides > img {
+    width: 90%;
+}
+
+.dot-container {
+    margin-top: 10vw;
+    text-align: right;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #f7941c;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.book-slider {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+}
+
+.prev, .next {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev > img {
+    width: 40%;
+}
+
+.prev > img:hover {
+    cursor: pointer;
+}
+
+.next > img {
+    width: 40%;
+    transform: rotate(180deg);
+}
+
+.next > img:hover {
+    cursor: pointer;
+}
+
+.mini-book {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini-book > img {
+    width: 80%;
+}
+
+.big-book-container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.big-book-border {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px 1px lightgray;
+}
+
+.big-book-border > img {
+    width: 60%;
+    margin-top: 2vh;
+}
+
+.border-shadow {
+    box-shadow: 2px 2px 5px 1px lightgray;
+}
+
+.book-title {
+    font-family: Futura Md BT Medium;
+    font-size: 1.35rem;
+    color: var(--dark-gray);
+    margin-top: 1.5vh;
+    text-align: center;
+}
+
+.book-title-big {
+    font-family: Futura Md BT Medium;
+    font-size: 1.75rem;
+    color: var(--dark-gray);
+    margin-top: 1.5vh;
+}
+
+.author {
+    font-family: Futura Md BT Medium;
+    font-size: 0.75rem;
+    color: var(--light-gray);
+}
+
+.author-big {
+    font-family: Futura Md BT Medium;
+    font-size: 0.90rem;
+    color: var(--light-gray);
+}
+
+.stars {
+    text-align: center;
+    margin: 1.5vh;
+}
+
+.stars > img {
+    width: 1rem;
+}
+
+.mini-book > button {
+    border-radius: 0.5rem;
+    border-style: none;
+    width: 10vw;
+    height: 5vh;
+    text-align: center;
+    color: white;
+    box-shadow: 3px 5px 1px 1px rgba(246, 148, 30, 0.5);
+    background-color: var(--light-orange);
+    font-family: Futura Md BT Medium;
+    font-size: 0.90rem;
+    cursor: pointer;
+}
+
+.mini-book > button:hover {
+    color: var(--light-orange);
+    background-color: white;
+    content: 'Add to Cart';
+}
+
+.mini-book > button:hover .price-text{
+    display: none;
+}
+
+.mini-book > button:hover .cart-text {
+    display: block
+}
+
+.big-book-border > button {
+    border-radius: 0.5rem;
+    border-style: none;
+    width: 12vw;
+    height: 6vh;
+    text-align: center;
+    color: white;
+    box-shadow: 3px 5px 1px 1px rgba(246, 148, 30, 0.5);
+    background-color: var(--light-orange);
+    font-family: Futura Md BT Medium;
+    font-size: 1.25rem;
+    margin-bottom: 2vh;
+    cursor: pointer;
+}
+
+.big-book-border > button:hover {
+    color: var(--light-orange);
+    background-color: white;
+}
+
+.big-book-border > button:hover .price-text {
+    display: none;
+}
+
+.big-book-border > button:hover .cart-text {
+    display: block;
+}
+
+.cart-text {
+    display: none;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 800px) {
+    /* For tablets: */
+    .right-slide {
+        padding-left: 0;
+    }
+
+    .mySlides > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .tabcontent > h1 {
+        margin: 20px 0;
+    }
+
+    .tabcontent > div {
+        text-align: center;
+    }
+
+    .dot-container {
+        margin-top: 5vh;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+.view-more-button {
+    border-radius: 0.5rem;
+    border-style: none;
+    padding: 2vh 5vw;
+    color: white;
+    box-shadow: 3px 5px 1px 1px rgba(246, 148, 30, 0.5);
+    background-color: var(--light-orange);
+    font-family: Futura Md BT Medium;
+    font-size: 1.25rem;
+}
+
+/*Acel*/
+#books {
+    color: var(--dark-gray);
+}
+
+#book-section {
+    padding: 1rem 0 0 0;
+}
+
+#e-book-navbar {
+    margin: 0 10%;
+}
+
+#e-book {
+    margin: 5vh 0;
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    font-family: Futura Md BT Bold;
+    font-size: 2rem;
+}
+
+#e-book img {
+    width: 2.5rem;
+    height: 2.5rem;
+    /* margin-right: auto; */
+    padding: 0.5rem;
+}
+
+#e-book > a {
+    margin: 0 1.25rem;
+    font-size: 1.25rem;
+    padding-top: 0.5rem;
+    color: var(--lighter-gray);
+    text-decoration: none;
+}
+
+#e-book > a:hover {
+    text-decoration: underline var(--light-orange);
+}
+
+#e-book #all-genres {
+    color: var(--dark-gray);
+    margin-left: auto;
+    padding-bottom: 1.25rem;
+    border-bottom: 0.5rem solid var(--lighter-orange);
+    border-radius: 0.25rem;
+}
+
+#e-book #all-genres:hover {
+    text-decoration: none;
+}
+
+#title {
+    color: var(--black);
+}
+
+#dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: var(--lighter-gray);
+    font-size: 1.25rem;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 8px 16px;
+    z-index: 1;
+}
+
+#dropdown a {
+    color: var(--lighter-gray);
+    text-decoration: none;
+}
+
+#title:hover #dropdown {
+    display: block;
+}
+
+#dropdown a:hover {
+    transition: color 0.5s;
+    color: var(--light-orange);
+}
+
+.e-book-icon {
+    display: flex;
+    flex-direction: row;
+}
+
+#content {
+    margin: 0 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#book-container {
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.text-center {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.book-title {
+    font-family: Futura Md BT Medium;
+    font-size: 1.25rem;
+    color: var(--dark-gray);
+}
+
+.book-pict {
+    width: 13rem;
+    height: 18rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    width: 13rem;
+    height: 18rem;
+    position: relative;
+    margin-bottom: -18rem;
+    bottom: 18rem;
+    background: rgba(255, 160, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-family: Futura Md BT Medium;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: default;
+}
+
+.overlay:hover {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.overlay-top,
+.overlay-mid,
+.overlay-bot {
+    display: flex;
+    flex-direction: row;
+}
+
+.star-icon {
+    width: 1rem;
+    height: 1rem;
+    padding: 0.5rem 0 0 0.5rem;
+}
+
+.star {
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+.type {
+    margin-left: auto;
+    margin-right: 0.5rem;
+    padding-top: 0.3rem;
+}
+
+.overlay-mid {
+    justify-content: center;
+}
+
+.search-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.view-more {
+    color: inherit;
+    font-size: 1.25rem;
+}
+
+.price {
+    color: inherit;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.heart {
+    width: 2rem;
+    height: 2rem;
+    margin-left: auto;
+    margin-right: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.book-img1 {
+    background-image: url("asset/content/aaa\ \(1\).jpg");
+}
+
+.book-img2 {
+    background-image: url("asset/content/aaa\ \(2\).png");
+}
+
+.book-img3 {
+    background-image: url("asset/content/aaa\ \(3).jpg");
+}
+
+.button-container {
+    text-align: center;
+}
+
+#promotion {
+    /* margin-top: 10vh; */
+    margin: 10vh 0;
+    display: flex;
+    flex-direction: row;
+    font-family: Futura Md BT Medium;
+    color: var(--light-orange);
+}
+
+#time-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.time-counter {
+    border-left: 0.25rem solid var(--light-orange);
+    width: 25%;
+    /* border: 3px solid black; */
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.time-counter span {
+    display: block;
+}
+
+#promotion p,
+.desc {
+    color: var(--light-gray);
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.count {
+    padding: 1rem 0;
+}
+
+.desc {
+    padding-bottom: 1rem;
+}
+
+#promo-book img {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    .mini-book {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #e-book > a {
+        margin: 0 1.25rem;
+        font-size: 1.25rem;
+        padding-top: 0.5rem;
+        color: var(--lighter-gray);
+        text-decoration: none;
+    }
+    #promotion {
+        flex-direction: column;
+    }
+    .time-counter {
+        font-size: 2rem;
+    }
+    #promotion p,
+    .desc {
+        font-size: 1rem;
+    }
+    #promo-book {
+        margin: 0 20%;
+    }
+    #promo-book img {
+        width: 60%;
+        height: 60%;
+    }
+    .mini-book {
+        display: none;
+    }
+    .big-book-container {
+        width: 80%;
+    }
+    .big-book-border > button {
+        width: 30vw;
+        height: 10vw;
+    }
 }
