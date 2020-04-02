@@ -1,65 +1,170 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="about-us.css">
-	<title>KYamedia</title>
-</head>
-<body>
-	<header class="navbar">
-		<img src="asset/logo.png">
-		<ul class="menu">
-			<li><a href="homepage.html">Home</a></li>
-			<li>
-                <div id="title">
-                    <a href="product-1.html">Books</a>
-                    <div id="dropdown-mini">
-                        <div id="dropdown-content"><a href="product-1.html">E-Book</a></div>
-                        <div id="dropdown-content"><a href="product-2.html">Book</a></div>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="about-us.css" />
+        <title>KYamedia</title>
+    </head>
+    <body>
+        <header class="navbar">
+            <img src="asset/logo.png" />
+            <ul class="menu">
+                <li><a href="homepage.html">Home</a></li>
+                <li>
+                    <div id="title">
+                        <a href="product-1.html">Books</a>
+                        <div id="dropdown-mini">
+                            <div id="dropdown-content">
+                                <a href="product-1.html">E-Book</a>
+                            </div>
+                            <div id="dropdown-content">
+                                <a href="product-2.html">Book</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <span class="cart-img">‏‏‎‎</span>
+                <li class="cart"><a href="">Cart</a></li>
+                <span class="cart-count">1</span>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+            </ul>
+            <span class="burger-menu" onclick="openNav()">&#9776;</span>
+        </header>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+            >
+            <a href="homepage.html">Home</a>
+            <a href="product-1.html">Books</a>
+            <a class="cart-side" href=""
+                ><span class="cart-img">‏‏‎‎</span> Cart
+                <span class="cart-count">1</span></a
+            >
+            <a href="about-us.html">About Us</a>
+            <a href="register.html">Sign Up</a>
+        </div>
+
+        <div id="body">
+            <div id="content-1">
+                <div id="intro" class="col-4 col-s-12">
+                    <div id="intro-section">
+                        <div>
+                            <h1>Digital Services</h1>
+                            <h2>Excellent Quality</h2>
+                            <p>
+                                Stay ahead of the curve with digital marketing
+                                trends of our business (book store). Our leading
+                                the pack amongst our competitors.
+                            </p>
+                        </div>
+                        <div class="button-container">
+                            <button id="start-tour">Start Tour</button>
+                        </div>
                     </div>
                 </div>
-            </li>
-			<span class="cart-img">‏‏‎‎</span>
-			<li class="cart"><a href="">Cart</a></li>
-			<span class="cart-count">1</span>
-			<li><a href="about-us.html">About Us</a></li>
-			<li><a href="register.html">Sign Up</a></li>
-		</ul>
-		<span class="burger-menu" onclick="openNav()">&#9776;</span>
-	</header>
+                <div id="image" class="col-8 col-s-12"></div>
+            </div>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="homepage.html">Home</a>
-        <a href="product-1.html">Books</a>
-        <a class="cart-side" href=""><span class="cart-img">‏‏‎‎</span> Cart <span class="cart-count">1</span></a>
-        <a href="about-us.html">About Us</a>
-        <a href="register.html">Sign Up</a>
-    </div>
-	
-	<main>
-		
-	</main>
+            <div id="content-2">
+                <div id="half-circle" class="col-4 col-s-12">
+                    <div id="first">
+                        <h3>Professional Support</h3>
+                        <p>
+                            We also provide tangible results measurable
+                            long-term business
+                        </p>
+                    </div>
+                    <div id="second">
+                        <h3>Professional Support</h3>
+                        <p>
+                            We also provide tangible results measurable
+                            long-term business
+                        </p>
+                    </div>
+                    <div id="third">
+                        <h3>Professional Support</h3>
+                        <p>
+                            We also provide tangible results measurable
+                            long-term business
+                        </p>
+                    </div>
+                </div>
 
-	<footer>
-		<span>© 2020 Kyamedia Online Bookshop.Inc</span>
-		<span class="social-media">
-			<a target="blank" class="icon fb" href="https://www.facebook.com"></a>
-			<span class="line-border"></span>
-			<a target="blank" class="icon ig" href="https://www.instagram.com"></a>
-			<span class="line-border"></span>
-			<a target="blank" class="icon twitter" href="https://www.twitter.com"></a>	
-		</span>
-		<ul class="policy">
-			<li><a href="#">Copyright Policy</a></li>
-			<li><a href="#">Term of Service</a></li>
-			<li><a href="#">Privacy Policy</a></li>
-		</ul>
-	</footer>
+                <div id="about" class="col-4 col-s-12">
+                    <div id="title">
+                        <span id="line"></span>
+                        <span>About Us</span>
+                    </div>
 
-	<script src="jquery-3.4.1.min.js"></script>
-	<script src="script.js"></script>
-</body>
+                    <div id="desc">
+                        <h2 id="desc-title">We are the best in your area</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Natus, consequuntur pariatur ex corporis
+                            laboriosam optio vel possimus ipsa unde dolores
+                            molestias dignissimos non. Earum aspernatur magni
+                            unde vitae, voluptatem delectus!
+                        </p>
+                    </div>
+
+                    <div id="outlet-container">
+                        <div class="outlet-counter">
+                            <span class="count">5821</span>
+                            <span class="desc">Outlet</span>
+                        </div>
+                        <div class="outlet-counter">
+                            <span class="count">765</span>
+                            <span class="desc">City</span>
+                        </div>
+                        <div class="outlet-counter">
+                            <span class="count">158</span>
+                            <span class="desc">Country</span>
+                        </div>
+                    </div>
+
+                    <img src="asset/logo.png" alt="" />
+                </div>
+
+                <div id="two-circle">
+                    <div id="circle-1"></div>
+                    <div id="circle-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <span>© 2020 Kyamedia Online Bookshop.Inc</span>
+            <span class="social-media">
+                <a
+                    target="blank"
+                    class="icon fb"
+                    href="https://www.facebook.com"
+                ></a>
+                <span class="line-border"></span>
+                <a
+                    target="blank"
+                    class="icon ig"
+                    href="https://www.instagram.com"
+                ></a>
+                <span class="line-border"></span>
+                <a
+                    target="blank"
+                    class="icon twitter"
+                    href="https://www.twitter.com"
+                ></a>
+            </span>
+            <ul class="policy">
+                <li><a href="#">Copyright Policy</a></li>
+                <li><a href="#">Term of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </footer>
+
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
 </html>

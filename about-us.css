@@ -1,1 +1,258 @@
 /*To do*/
+#body {
+    /* border: 2px solid rebeccapurple; */
+    font-family: Futura Md BT Medium;
+    color: rgb(99, 99, 99);
+}
+
+#content-1 {
+    /* border: 2px solid black; */
+    margin: 0vh 10vw;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+#image {
+    /* border: 2px solid yellow; */
+    /* width: 60%; */
+    background-image: url("asset/content/aaa\ \(2\).jpg");
+    background-position: center;
+    padding-bottom: 30%;
+}
+
+#content-1 h1,
+h2 {
+    font-family: Futura Md BT Bold;
+    color: var(--light-orange);
+}
+
+#content-1 h2 {
+    margin-top: -1rem;
+}
+
+#intro {
+    /* border: 2px solid green; */
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    /* width: 40%; */
+}
+
+.button-container {
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    text-align: left;
+}
+
+button {
+    border-radius: 0.5rem;
+    border-style: none;
+    padding: 2vh 5vw;
+    color: white;
+    box-shadow: 3px 5px 1px 1px rgba(246, 149, 30, 0.5);
+    background-color: var(--light-orange);
+    font-family: Futura Md BT Medium;
+    font-size: 1.25rem;
+}
+
+#line {
+    display: inline-block;
+    width: 3rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--lighter-orange);
+}
+
+#title {
+    font-family: Futura Md BT Bold;
+    color: var(--lighter-orange);
+}
+
+#content-2 {
+    /* border: 2px solid darkmagenta; */
+    display: flex;
+    flex-direction: row;
+}
+
+#half-circle {
+    /* border: 2px solid darkcyan; */
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0.5rem;
+    height: 55rem;
+    /* width: 35%; */
+    background-color: rgb(254, 239, 196);
+    border-radius: 0rem 55rem 55rem 0rem;
+    z-index: -1;
+    margin-top: -5.5rem;
+}
+
+#half-circle p {
+    font-size: 0.8rem;
+}
+
+#half-circle h3 {
+    color: var(--light-orange);
+}
+
+#half-circle #first,
+#second,
+#third {
+    background-color: white;
+    width: 65%;
+    padding: 20px 40px 20px 40px;
+    z-index: 2;
+    font-weight: 550;
+}
+
+#half-circle #first {
+    margin-top: 25%;
+}
+
+#half-circle #second {
+    margin-left: 40%;
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+
+#half-circle #second,
+#third {
+    margin-top: 15%;
+}
+
+#half-circle #first,
+#third {
+    margin-left: 20%;
+    border-radius: 1.5rem;
+}
+
+#about {
+    /* border: 2px solid brown; */
+    /* width: 35%; */
+    padding: 8rem 1rem 0 4rem;
+}
+
+#desc {
+    margin-top: -20px;
+}
+
+#about #desc-title {
+    font-family: Futura Md BT Bold;
+    font-size: 40px;
+    color: var(--light-orange);
+}
+
+#outlet-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    color: var(--light-orange);
+    font-family: Futura Md BT Bold;
+    margin: 4rem 0 4rem 0;
+}
+
+.outlet-counter {
+    /* width: 30%; */
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+.outlet-counter span {
+    display: block;
+}
+
+.outlet-counter .desc {
+    color: rgb(99, 99, 99);
+    font-size: 1rem;
+}
+
+#about > img {
+    width: 12rem;
+}
+
+#two-circle {
+    /* border: 2px solid orange; */
+    margin-left: 3rem;
+    width: 30%;
+}
+
+#circle-1 {
+    width: 25rem;
+    height: 25rem;
+    background-color: rgb(255, 235, 176);
+    clip-path: circle(40% at 85% 55%);
+    z-index: -1;
+}
+
+#circle-2 {
+    width: 30%;
+    margin: -5rem 7rem 0 7rem;
+    background-color: rgb(255, 229, 148);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 6rem;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 800px) {
+    #content-1 {
+        flex-direction: column-reverse;
+    }
+
+    #image {
+        height: 15rem;
+        background-size: 150% 150%;
+    }
+
+    #intro {
+        margin-top: -0.5rem;
+    }
+
+    .button-container {
+        margin-top: 5vh;
+    }
+
+    #half-circle {
+        padding: 1rem 0.5rem;
+        height: 45rem;
+        margin-top: -4.5rem;
+    }
+
+    #half-circle #first,
+    #second,
+    #third {
+        padding: 10px 30px 10px 30px;
+        width: 75%;
+    }
+
+    #half-circle #first {
+        margin-top: 30%;
+    }
+
+    #half-circle #second {
+        margin-left: 27%;
+    }
+
+    #half-circle #first,
+    #third {
+        margin-left: 15%;
+    }
+
+    #content-2 {
+        flex-direction: column;
+    }
+
+    #about {
+        padding: 3rem 2rem 2rem 2rem;
+    }
+
+    #outlet-container {
+        font-size: 2rem;
+    }
+
+    #two-circle {
+        display: none;
+    }
+}
