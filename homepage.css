@@ -142,7 +142,9 @@ main {
 }
 
 .mini-book > img {
-    width: 80%;
+    /*width: 80%;*/
+    width: 180px;
+    height: 250px;
 }
 
 .big-book-container {
@@ -153,15 +155,21 @@ main {
 
 .big-book-border {
     width: 80%;
+    box-shadow: 2px 2px 5px 1px lightgray;
+}
+
+.big-book-content {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 2px 2px 5px 1px lightgray;
 }
 
-.big-book-border > img {
-    width: 60%;
+.big-book-border img {
+    /*width: 60%;*/
+    width: 225px;
+    height: 312px;
     margin-top: 2vh;
 }
 
@@ -177,7 +185,7 @@ main {
     text-align: center;
 }
 
-.book-title-big {
+.big-book-border .book-title {
     font-family: Futura Md BT Medium;
     font-size: 1.75rem;
     color: var(--dark-gray);
@@ -190,7 +198,7 @@ main {
     color: var(--light-gray);
 }
 
-.author-big {
+.big-book-border .author {
     font-family: Futura Md BT Medium;
     font-size: 0.90rem;
     color: var(--light-gray);
@@ -203,6 +211,8 @@ main {
 
 .stars > img {
     width: 1rem;
+    height: 1rem;
+    margin-top: 0;
 }
 
 .mini-book > button {
@@ -233,7 +243,7 @@ main {
     display: block
 }
 
-.big-book-border > button {
+.big-book-border button {
     border-radius: 0.5rem;
     border-style: none;
     width: 12vw;
@@ -611,8 +621,8 @@ main {
     .big-book-container {
         width: 80%;
     }
-    .big-book-border > button {
-        width: 30vw;
-        height: 10vw;
+    .big-book-border button {
+        width: 150px;
+        height: 50px;
     }
 }

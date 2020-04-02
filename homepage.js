@@ -18,6 +18,16 @@ $(document).ready(function(){
         return false;
     });
 
+    $('.prev').click(function(){
+        $('.sliders.big-book-content').fadeTo(1, 0);
+        $('.sliders.big-book-content').fadeTo(250, 1);
+    });
+
+    $('.next').click(function(){
+        $('.sliders.big-book-content').fadeTo(1, 0);
+        $('.sliders.big-book-content').fadeTo(250, 1);
+    });
+
 });
 
 function currentSlide(n){

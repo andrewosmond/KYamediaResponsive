@@ -10,17 +10,25 @@
 <body>
 	<header class="navbar">
 		<img src="asset/logo.png">
-        <ul class="menu">
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="product-1.html">Books</a></li>
-            <span class="cart-img">‏‏‎‎</span>
-            <li class="cart"><a href="">Cart</a></li>
-            <span class="cart-count">1</span>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="register.html">Sign Up</a></li>
-        </ul>
-        <span class="burger-menu" onclick="openNav()">&#9776;</span>
-    </header>
+		<ul class="menu">
+			<li><a href="homepage.html">Home</a></li>
+			<li>
+                <div id="title">
+                    <a href="product-1.html">Books</a>
+                    <div id="dropdown-mini">
+                        <div id="dropdown-content"><a href="product-1.html">E-Book</a></div>
+                        <div id="dropdown-content"><a href="product-2.html">Book</a></div>
+                    </div>
+                </div>
+            </li>
+			<span class="cart-img">‏‏‎‎</span>
+			<li class="cart"><a href="">Cart</a></li>
+			<span class="cart-count">1</span>
+			<li><a href="about-us.html">About Us</a></li>
+			<li><a href="register.html">Sign Up</a></li>
+		</ul>
+		<span class="burger-menu" onclick="openNav()">&#9776;</span>
+	</header>
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
