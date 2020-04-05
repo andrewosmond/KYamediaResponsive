@@ -258,16 +258,16 @@ main {
     cursor: pointer;
 }
 
-.big-book-border > button:hover {
+.big-book-border button:hover {
     color: var(--light-orange);
     background-color: white;
 }
 
-.big-book-border > button:hover .price-text {
+.big-book-border button:hover .price-text {
     display: none;
 }
 
-.big-book-border > button:hover .cart-text {
+.big-book-border button:hover .cart-text {
     display: block;
 }
 
