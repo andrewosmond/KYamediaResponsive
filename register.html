@@ -1,162 +1,158 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <link rel="stylesheet" type="text/css" href="register.css" />
-        <title>KYamedia</title>
-    </head>
-    <body>
-        <header class="navbar">
-            <img src="asset/logo.png">
-            <ul class="menu">
-                <li><a href="homepage.html">Home</a></li>
-                <li>
-                    <div id="title">
-                        <a href="product-1.html">Books</a>
-                        <div id="dropdown-mini">
-                            <div id="dropdown-content"><a href="product-1.html">E-Book</a></div>
-                            <div id="dropdown-content"><a href="product-2.html">Book</a></div>
-                        </div>
-                    </div>
-                </li>
-                <span class="cart-img">‏‏‎‎</span>
-                <li class="cart"><a href="">Cart</a></li>
-                <span class="cart-count">1</span>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="register.html">Sign Up</a></li>
-            </ul>
-            <span class="burger-menu" onclick="openNav()">&#9776;</span>
-        </header>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="register.css" />
+		<title>KYamedia</title>
+	</head>
+	<body>
+		<header class="navbar">
+			<img src="asset/logo.png" />
+			<ul class="menu">
+				<li><a href="homepage.html">Home</a></li>
+				<li>
+					<div id="title">
+						<a href="product-1.html">Books</a>
+						<div id="dropdown-mini">
+							<div id="dropdown-content">
+								<a href="product-1.html">E-Book</a>
+							</div>
+							<div id="dropdown-content"><a href="product-2.html">Book</a></div>
+						</div>
+					</div>
+				</li>
+				<span class="cart-img">‏‏‎‎</span>
+				<li class="cart"><a href="">Cart</a></li>
+				<span class="cart-count">1</span>
+				<li><a href="about-us.html">About Us</a></li>
+				<li><a href="register.html">Sign Up</a></li>
+			</ul>
+			<span class="burger-menu" onclick="openNav()">&#9776;</span>
+		</header>
 
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="homepage.html">Home</a>
-            <a href="product-1.html">Books</a>
-            <a class="cart-side" href=""><span class="cart-img">‏‏‎‎</span> Cart <span class="cart-count">1</span></a>
-            <a href="about-us.html">About Us</a>
-            <a href="register.html">Sign Up</a>
-        </div>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&times;</a
+			>
+			<a href="homepage.html">Home</a>
+			<a href="product-1.html">Books</a>
+			<a class="cart-side" href=""
+				><span class="cart-img">‏‏‎‎</span> Cart
+				<span class="cart-count">1</span></a
+			>
+			<a href="about-us.html">About Us</a>
+			<a href="register.html">Sign Up</a>
+		</div>
 
-        <div id="content">
-            <img class="col-7" src="asset/content/aaa (1).png" />
-            <div id="form-container" class="col-5 col-s-12">
-                <p id="join-us">Join Us!</p>
-                <p id="info">
-                    Create your account and get full access in book store every
-                    outlet of Kyamedia
-                </p>
-                <form>
-                    <div class="input-row">
-                        <div class="input">
-                            <label for="fname">First Name</label>
-                            <input id="fname" placeholder="First Name" />
-                        </div>
-                        <div class="input">
-                            <label for="lname">Last Name</label>
-                            <input id="lname" placeholder="Last Name" />
-                        </div>
-                    </div>
+		<div id="content">
+			<img class="col-7" src="asset/content/aaa (1).png" />
+			<div id="form-container" class="col-5 col-s-12">
+				<p id="join-us">Join Us!</p>
+				<p id="info">
+					Create your account and get full access in book store every outlet of
+					Kyamedia
+				</p>
+				<form id="regis-form" onsubmit="doValidation(); return false;">
+					<div class="input-row">
+						<div class="input">
+							<label for="fname">First Name</label>
+							<input id="fname" placeholder="First Name" />
+						</div>
+						<div class="input">
+							<label for="lname">Last Name</label>
+							<input id="lname" placeholder="Last Name" />
+						</div>
+					</div>
 
-                    <div class="input-row">
-                        <div class="input">
-                            <label for="gender">Gender</label>
-                            <div class="custom-select">
-                                <select name="gender" id="gender">
-                                    <option value="0">Select Gender</option>
-                                    <option value="1">Male</option>
-                                    <option value="2">Female</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="input">
-                            <label for="dob">Date of Birth</label>
-                            <input id="dob" type="date" />
-                        </div>
-                    </div>
-                    <div class="input-row">
-                        <div class="input">
-                            <label for="reg">Region</label>
-                            <div class="custom-select">
-                                <select name="country" id="country">
-                                    <option value="0">Select Country</option>
-                                    <option value="1">Indonesia</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="input">
-                            <label style="color: transparent;">A</label>
-                            <div class="custom-select">
-                                <select name="province" id="province">
-                                    <option value="0">Select Province</option>
-                                    <option value="1">Jawa Barat</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="input-row">
-                        <div class="input">
-                            <label for="pw">Password</label>
-                            <input
-                                id="pw"
-                                type="password"
-                                placeholder="Password"
-                            />
-                        </div>
-                        <div class="input">
-                            <label for="con-pw">Confirmation Password</label>
-                            <input
-                                id="con-pw"
-                                type="password"
-                                placeholder="Confirmation Password"
-                            />
-                        </div>
-                    </div>
-                    <label class="agreement"
-                        >This Agreement and the Security Interest shall
-                        terminate on the date on which all payments under the
-                        Notes have been made in full.
-                        <input type="checkbox" />
-                        <span class="checkmark"></span>
-                    </label>
-                    <div id="submit-container">
-                        <input id="submit" type="submit" value="Register" />
-                    </div>
-                </form>
-            </div>
-        </div>
+					<div class="input-row">
+						<div class="input">
+							<label for="gender">Gender</label>
+							<div class="custom-select">
+								<select name="gender" id="gender">
+									<option value="0">Select Gender</option>
+									<option value="1">Male</option>
+									<option value="2">Female</option>
+								</select>
+							</div>
+						</div>
+						<div class="input">
+							<label for="dob">Date of Birth</label>
+							<input id="dob" type="date" />
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="input">
+							<label for="reg">Region</label>
+							<div class="custom-select">
+								<select name="country" id="country">
+									<option value="0">Select Country</option>
+									<option value="1">Indonesia</option>
+								</select>
+							</div>
+						</div>
+						<div class="input">
+							<label style="color: transparent;">A</label>
+							<div class="custom-select">
+								<select name="province" id="province">
+									<option value="0">Select Province</option>
+									<option value="1">Jawa Barat</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="input">
+							<label for="pw">Password</label>
+							<input id="pw" type="password" placeholder="Password" />
+						</div>
+						<div class="input">
+							<label for="con-pw">Confirmation Password</label>
+							<input
+								id="con-pw"
+								type="password"
+								placeholder="Confirmation Password"
+							/>
+						</div>
+					</div>
+					<label class="agreement"
+						>This Agreement and the Security Interest shall terminate on the
+						date on which all payments under the Notes have been made in full.
+						<input id="checkbox" type="checkbox" />
+						<span class="checkmark"></span>
+					</label>
+					<div id="submit-container">
+						<input id="submit" type="submit" value="Register" onclick="" />
+					</div>
+				</form>
+				<div id="errorAlert" class="message" role="alert"></div>
+				<div id="successAlert" class="message" role="alert"></div>
+			</div>
+		</div>
 
-        <footer>
-            <span>© 2020 Kyamedia Online Bookshop.Inc</span>
-            <span class="social-media">
-                <a
-                    target="blank"
-                    class="icon fb"
-                    href="https://www.facebook.com"
-                ></a>
-                <span class="line-border"></span>
-                <a
-                    target="blank"
-                    class="icon ig"
-                    href="https://www.instagram.com"
-                ></a>
-                <span class="line-border"></span>
-                <a
-                    target="blank"
-                    class="icon twitter"
-                    href="https://www.twitter.com"
-                ></a>
-            </span>
-            <ul class="policy">
-                <li><a href="#">Copyright Policy</a></li>
-                <li><a href="#">Term of Service</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-        </footer>
+		<footer>
+			<span>© 2020 Kyamedia Online Bookshop.Inc</span>
+			<span class="social-media">
+				<a target="blank" class="icon fb" href="https://www.facebook.com"></a>
+				<span class="line-border"></span>
+				<a target="blank" class="icon ig" href="https://www.instagram.com"></a>
+				<span class="line-border"></span>
+				<a
+					target="blank"
+					class="icon twitter"
+					href="https://www.twitter.com"
+				></a>
+			</span>
+			<ul class="policy">
+				<li><a href="#">Copyright Policy</a></li>
+				<li><a href="#">Term of Service</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+			</ul>
+		</footer>
 
-        <script src="jquery-3.4.1.min.js"></script>
-        <script src="script.js"></script>
-        <script src="register.js"></script>
-    </body>
+		<script src="jquery-3.4.1.min.js"></script>
+		<script src="script.js"></script>
+		<script src="register.js"></script>
+	</body>
 </html>
